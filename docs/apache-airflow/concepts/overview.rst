@@ -65,7 +65,7 @@ Control Flow
 :doc:`tasks` have dependencies declared on each other. You'll see this in a DAG either using the ``>>`` and ``<<`` operators::
 
     first_task >> [second_task, third_task]
-    third_task << fourth_task
+    fourth_task << third_task
 
 Or, with the ``set_upstream`` and ``set_downstream`` methods::
 
